@@ -32,7 +32,7 @@
             $.ajax({
                 type: "GET",
                 //YOUR TURN: Replace with csv export link
-                url: 'https://docs.google.com/spreadsheets/d/1v4Ii6zce_V-9Boe0uAqu-tewgy_GHGqhtYAPdlimB9Q/gviz/tq?tqx=out:csv&sheet=racer_sightings', // replace the text in single quotes with the link to your CSV file
+                url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSEsgqCENxzxY1oVLu_BQPX_wuVqsJaK_0hmzEfAx5qfZuqrOiLhM_ev9rPtNTndfCrHhbfK5_aePCv/pub?gid=0&single=true&output=csv', // replace the text in single quotes with the link to your CSV file
                 dataType: "text",
                 success: function (csvData) { makeGeoJSON(csvData); }
             });
